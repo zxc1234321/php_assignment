@@ -1,0 +1,84 @@
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: rgba(0, 0, 0, 0.015); /* 헤더 배경을 투명하게 */
+    backdrop-filter: blur(10px); /* 배경 흐림 효과 */
+    border-bottom: 1px solid #000;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.logoHref {
+    display: flex;
+    align-items: center;
+}
+
+.mainNavWrapper {
+    display: flex;
+    border-radius: 5px;
+    padding: 15px 15px;
+    gap: 15px;
+}
+
+.mainNavWrapper a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.subNavContainer nav {
+    display: flex;
+    gap: 15px; /* 버튼 간의 간격 조정 */
+}
+
+.navWrapper a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--font-black-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+/* 버튼 스타일 추가 */
+.signInBtn, .signUpBtn {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #f9f9f9; /* 버튼 배경색 */
+    border: 1px solid #999;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #999; /* hover 시 버튼 색상 */
+    }
+    
+    &:active {
+        transform: none;
+        outline: none;
+    }
+}

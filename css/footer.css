@@ -1,0 +1,86 @@
+/* 전체 배경 및 기본 스타일 */
+.footer {
+    background-color: #f9fafb; /* 밝은 배경 */
+    padding: 50px 20px;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    color: #333; /* 기본 텍스트 색상 */
+}
+
+/* 소셜 아이콘 스타일 */
+.footer .social-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0.6;
+}
+
+.footer .social-icons img:hover {
+    opacity: 1;
+    transform: scale(1.1); /* 아이콘 호버 시 살짝 확대 */
+}
+
+/* 컬럼 구조 및 텍스트 스타일 */
+.footer .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer .footer-columns div {
+    flex: 1;
+    max-width: 180px;
+}
+
+.footer .footer-columns h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .footer-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-columns ul li {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.footer .footer-columns ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-columns ul li a:hover {
+    color: #333; /* 호버 시 진한 색상 */
+    text-decoration: underline;
+}
+
+/* 주소 섹션 스타일 */
+.footer .address {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.footer .address p {
+    margin: 5px 0;
+}

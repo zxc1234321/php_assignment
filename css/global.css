@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'STUNNING-Bd';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/STUNNING-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --background-color: #f9f9f9;
+    --font-black-color: #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: STUNNING-Bd !important;
+    font-weight: 400;
+}
